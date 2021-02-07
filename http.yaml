@@ -5,3 +5,8 @@ tasks:
     yum:
       name: httpd
       staet:started
+
+  - name: Start HTTPD
+  systemd:
+    name:httpd
+    state: started 
